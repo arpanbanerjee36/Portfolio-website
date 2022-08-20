@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tables</title>
+    </head>
+    <body>
+        <table border="1">
+            <!--Caption/ title for the table-->
+            <caption>Student Report card</caption>
+            <!--Row 1 defines the name and grade of the student-->
+            <!--Total 4 columns are splitted into 3 and 1-->
+            <tr>
+                <td colspan="3">Name: Name</td>
+                <td>5</td>
+            </tr>
+            <!--Row 2, all columns are merged-->
+            <tr>
+                <td colspan="4">Address:<br>door number,street,City, PIN,STATE</td>
+            </tr>
+            <!--Row 3, Defined as the heading to highlightthem, no spanning is done-->
+            <tr>
+                <th>English</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>Social</th>
+            </tr>
+            <!--Row 4, no spanning-->
+            <tr>
+                <td>80</td>
+                <td>88</td>
+                <td>79</td>
+                <td>92</td>
+            </tr>
+            <!--Row 5, 4 columns are splitted into 3 and1-->
+            <tr>
+                <th colspan="3">Total</th>
+                <th>339</th>
+            </tr>
+        </table>
+    </body>
+</html>

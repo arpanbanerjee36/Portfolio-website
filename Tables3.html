@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tables</title>
+    </head>
+    <body>
+        <table border="2" bordercolor="Red" align="center">
+            <!--Caption/ title for the table-->
+            <caption><h1>Shopping bill</h1></caption>
+            <!--Total 6 columns are splitted into 3 and 3-->
+            <tr>
+                <th colspan="3">Invoice #123456789</th>
+                <th colspan="3">18 January 2022</th>
+            </tr>
+            <!--Row 2, columns are splitted into 2 and 4-->
+            <tr>
+                <td colspan="2"><b>Pay to:</b><br>
+                    Acme Billing Co.<br>
+                    123 Main St.<br>
+                    Cityville,NA 12345
+                </td>
+                <td colspan="4"><b>Customer:</b><br>
+                    John Smith<br>
+                    321 Willow Way<br>
+                    Southeast Northwestershire,MA 54321
+                </td>
+            </tr>
+            <!--Row 3, Defined as the heading to highlight them, no spanning is done-->
+            <tr>
+                <th><b>Name / Description</b></th>
+                <th><b>Qty.</b></th>
+                <th><b>@</b></th>
+                <th><b>Cost</b></th>
+            </tr>
+            <tr>
+                <td>Paperclips</td>
+                <td>1000</td>
+                <td>0.01</td>
+                <td>10.00</td>
+            </tr>
+            <tr>
+                <td>Staples(box)</td>
+                <td>100</td>
+                <td>1.00</td>
+                <td>100.00</td>
+            </tr>
+            <!--Row 6, 4 columns are splitted into 3 and 1-->
+            <tr>
+                <th colspan="3">Subtotal</th>
+                <td>110.00</td>
+            </tr>
+            <!--Row 7, 4 columns are splitted into 2 and 2-->
+            <tr>
+                <th colspan="2">Tax</th>
+                <td>8%</td>
+                <td>8.80</td> 
+            </tr>
+            <!--Row 8, 4 columns are splitted into 3 and 1-->
+            <tr>
+                <th colspan="3">Grand Total</th>
+                <td>118.80</td>
+            </tr>
+        </table>
+    </body>
+</html>

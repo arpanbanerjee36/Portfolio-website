@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <head>
+        <!--Title of the web page form-->
+        <title>Testbook Servey Form</title>
+        <!--styles given using the class name of the divisions-->
+        <style>
+            .main
+            {
+                text-align:center;
+                border-width:0vmax;
+            }
+            .highlights
+            {
+                color:red;font-weight:800;font-style:italic;
+            }
+            .content
+            {
+                background-color:rgb(117, 212, 244);
+            }
+        </style>
+    </head>
+    <body leftmargin="200" topmargin="100">
+        <form>
+            <div class="main">
+                <!--Caption/ title for the table-->
+                <caption><h1 style="background-color:rgba(216, 185, 246, 0.902);text-align:center;font-size:50px;">
+                    <span class="highlights">Survey</span></h1></caption>
+                <div class="content">
+                    <h3 style="font-size:large"><br>
+                    <!--label for getting user information-->
+                    <label for="name" style="margin-left:-120px">Name<span class="highlights">*</span></label><br>
+                    <!--input element - mandatory field-->
+                    <input type="text" name="name" required placeholder="Enter Your Name"><br><br>
+                    <!--label for getting user information-->
+                    <label for="email_id" style="margin-left:-120px">Email<span class="highlights">*</label><br>
+                    <!--input element - mandatory field-->
+                    <input type="email" name="email_id" required placeholder="test@gmail.com"><br><br>
+                    <!--label for getting user roll number-->
+                    <label for="rollnumber" style="margin-left:-110px">Roll No<span class="highlights">*</label><br>
+                    <!--input element - mandatory field-->
+                    <input type="text" name="rollnumber" required placeholder="roll"><br><br>
+                    <!--label for getting rating cource-->
+                    <label for="rating" style="margin-left:50px">How do you rate our cource?</label><br>
+                    <select style="margin-left:-70px">
+                    <!--option elements - mandatory fields-->
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                    <option value="notsatisfied">Not Satisfied</option>
+                    </select><br><br>
+                    <!--label for getting favourite topic-->
+                    <label for="favoritetopic" style="margin-left:70px">Your Favourite Topic in HTML</label><br>
+                    <!--input elements - mandatory field-->
+                    <input type="checkbox">Structural Elements<br>
+                    <input type="checkbox" style="margin-left:-38px">Links and List<br>
+                    <input type="checkbox" style="margin-left:-43px">HTML Media<br>
+                    <input type="checkbox" style="margin-left:-50px">HTML Table<br>
+                    <input type="checkbox" style="margin-left: 1.2px">Grouping Elements<br>
+                    <input type="checkbox" style="margin-left:-100px">Forms
+                    <br><br>
+                    <!--label for getting user love this course-->
+                    <label for="likecourse" style="margin-left:70px">Do you like the HTML course?</label><br>
+                    <!--input element - mandatory field-->
+                    <input type="radio" name="correct" style="margin-left:-80px">Yes
+                    <input type="radio" name="correct" >No
+                    <br><br>
+                    <!--label for getting user feedback-->
+                    <label for="feedback" style="margin-left: 10px">Few words about course</label><br>
+                    <!--input element - mandatory field-->
+                    <textarea rows="6" cols="40" name="description" style="margin-left: 140px"></textarea><br><br>
+                    <!--input type as submit this is act as a button-->
+                    <input type="submit" value="Submit" style="margin-left:-120px">
+                    </h3><br>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

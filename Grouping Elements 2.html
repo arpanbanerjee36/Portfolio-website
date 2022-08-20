@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Title of the web page-->
+        <title>DIV and SPAN</title>
+        <!--styles given using the class name of the divisions-->
+        <style>
+        .main
+        {
+            text-align:justify;
+        }
+        .highlights
+        {
+            color:red;font-weight:bold;
+        }
+        .content
+        {
+            background-color:lightblue;
+        }
+        .table
+        {
+            background-color:lightgreen;
+        }
+        .lists
+        {
+            background-color:lightpink;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="content">
+                <!--Content with highlights-->
+                <h1>Running Champions</h1>
+                <p>In our school we conducted<span class="highlights">Intraschool Running competions</span>, 
+                    where students from all school participated.Some of our student have won the competition.
+                    List of students<span class="highlights">who won the competions</span>are as follows:</p>
+            </div>
+            <div class="table">
+                <table border="1"style="width:30%">
+                    <!--Header row-->
+                    <tr>
+                        <th colspan="2">Name</th>
+                        <th>Grade</th>
+                    </tr>
+                    <!--Data row 1-->
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>4</td>
+                    </tr>
+                    <!--Data row 2-->
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>7</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="lists">
+                <p>Rank of winners can be seen in the following list</p>
+                <ol>
+                    <!--ordered list-->
+                    <li>Jack Wills</li>
+                    <li>Jill Smith</li>
+                    <li>Mark William</li>
+                    <li>Eve Jackson</li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>
